@@ -10,7 +10,9 @@ class UserController extends Controller
     // Exibe a lista de usuários ou a página de um usuário específico
     public function index()
     {
-        return view('users.index');
+        return view('users.index', [
+            'saudações' => 'hello world!!'
+        ]);
 
         // return 
         //         'id' => 1,

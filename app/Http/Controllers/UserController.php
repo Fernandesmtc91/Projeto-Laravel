@@ -10,19 +10,16 @@ class UserController extends Controller
     // Exibe a lista de usuários ou a página de um usuário específico
     public function index()
     {
+        $users = User::all();
         return view('users.index', [
-            'saudações' => 'hello world!!'
-        ]);
-
-        // return 
-        //         'id' => 1,
-        //        'name' => 'Francisco'
-        //     ]);
+            'saudacoes' => 'hello world!!',   //comentario salvando como variáveis para ser impresso no codgo HTML
+            'users2' => $users
+        ]);            //Todos os usuarios do banco de dados
     }
-
-    // Exibe um usuário específico (usando Route Model Binding)
     public function show(User $user)
     {
-        return $user;
+        return view('users.show', [
+            'user' => $user
+        ]);
     }
 }

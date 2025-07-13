@@ -13,4 +13,4 @@ Route::get(
 // routes/web.php
 
 //Route::get('admin/usuarios',[UserController::class,'index']);
-Route::get('admin/usuarios', [UserController::class, 'index']);
+Route::get('admin/usuarios/{user}', [UserController::class, 'show']);

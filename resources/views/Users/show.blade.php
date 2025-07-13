@@ -6,9 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>{{ $saudacoes }} </h1>
-        {{ var_dump($users) }}
-        {{ dd($users2) }}
-        
+       <h1> mostrar usuario {{ $user->name }}</h1>
+            {{ dd($user) }}
 </body>
 </html>

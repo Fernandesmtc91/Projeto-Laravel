@@ -12,13 +12,19 @@ class UserController extends Controller
     {
         $users = User::all();
         return view('users.index', [
-            'saudacoes' => 'hello world!!',   //comentario salvando como variáveis para ser impresso no codgo HTML
+            'saudacoes' => 'hello world!!2',   //comentario salvando como variáveis para ser impresso no codgo HTML
             'users2' => $users
         ]);            //Todos os usuarios do banco de dados
     }
     public function show(User $user)
     {
         return view('users.show', [
+            'user' => $user
+        ]);
+    }
+    public function paginaPrincipal(User $user)
+    {
+        return view('users.PaginaPrincipal', [
             'user' => $user
         ]);
     }

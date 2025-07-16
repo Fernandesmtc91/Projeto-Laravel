@@ -13,4 +13,6 @@ Route::get(
 // routes/web.php
 
 //Route::get('admin/usuarios',[UserController::class,'index']);
-Route::get('admin/usuarios/{user}', [UserController::class, 'show']);
+Route::get('admin/usuarios/index', [UserController::class, 'index']);
+route::get('admin/usuarios/show', [UserController::class, 'show']);
+route::get('admin/usuarios/PaginaPrincipal', [UserController::class, 'PaginaPrincipal']);

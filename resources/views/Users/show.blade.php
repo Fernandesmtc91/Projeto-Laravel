@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-       <h1> mostrar usuario {{ $user->name }}</h1>
+       <h1> mostrar usuario2 {{ $user->name }}</h1>
             {{ dd($user) }}
 </body>
 </html>

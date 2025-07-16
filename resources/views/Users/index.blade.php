@@ -6,9 +6,14 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>{{ $saudacoes }} </h1>
-        {{ var_dump($users) }}
+    <h1> {{$saudacoes}} </h1>
         {{ dd($users2) }}
+        {{$name}}
+
+    @php
+        $name = 'Francisco Neto';
+    @endphp
+    {{$name}}
         
 </body>
 </html>

@@ -3,17 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Hello wordl</title>  <!-- título da página -->
 </head>
 <body>
-    <h1> {{$saudacoes}} </h1>
-        {{ dd($users2) }}
-        {{$name}}
-
-    @php
-        $name = 'Francisco Neto';
+     @php
+        $saudacoes = 'Hello world Sr.';
+        $name = ' Francisco Neto';
     @endphp
-    {{$name}}
-        
+    <h1>    
+        {{$saudacoes}}       
+        {{$name}}
+        {{$user as user}}
+    </h1>  
+    @foreach($users as $user) 
+        <div> {{ $user->name}} </div>
+    @endforeach
 </body>
 </html>

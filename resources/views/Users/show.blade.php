@@ -1,12 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-       <h1> mostrar usuario2 {{ $user->name }}</h1>
-            {{ dd($user) }}
-</body>
-</html>
+@extends('layouts.master')
+@section('title')
+  Lista dos Usuarios
+@endsection
+
+@section('content')
+  <h1> Mostrar Usuarios</h1>
+      @php
+        $greeting = 'Hello'
+      @endphp
+  <h2>{{$greeting}}</h2>
+        
+@endsection
